@@ -147,7 +147,7 @@ while active:
                      where would you go?\n')
     responsed[name] = response
     repeat = input('Anyone else? (yes / no) ' )
-    if repeat == ('no' or 'No'):
+    if repeat in answer:
         active = False
         print(active)
 for name, response in responsed.items():
