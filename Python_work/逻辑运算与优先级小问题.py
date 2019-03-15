@@ -82,12 +82,7 @@ else:
 #回到最初的问题，若我想让比较repeat与‘no’，‘No’，‘NO’三个，
 #只要与三个中的任意一个相同就可以中止循环，我该怎么办呢？
 #我可以创建一个列表，用‘in’ 或者 ‘not in’来实现
-polling_active = True
-nos = ['no', 'No', 'NO']
-repeat = input("Would you like to let another person respond? (Yes/ No) ")
-if repeat in nos:
-    polling_active = False
-print(polling_active)
+
 
 
 
