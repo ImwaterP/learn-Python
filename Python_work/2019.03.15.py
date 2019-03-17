@@ -255,6 +255,67 @@ print(list(map(lambda x, y: x+y, data, data)))
 print(map(lambda x: x**2, data))
 
 
+"""
+读取txt文件
+with
+"""
+#相对路径（读取的文件与就在当前代码所在文件夹内）
+with open("word.txt") as f:
+    contents = f.read()
+    print(contents)
+#绝对路径（读取的文件在其他文件夹内）
+with open(r"C:\Users\Administrator\Desktop\word.txt") as f:
+    contents = f.read()
+    print(contents)
+#逐行读取
+with open(r"C:\Users\Administrator\Desktop\word.txt") as f:
+    for line in f:
+        #print(line)
+#取消行与行之间的换行
+        print(line, end = "")
+
+"""
+写入文件
+w:写入模式（wb表示二进制写入）
+r：读取模式（rb表示二进制读取）
+r+：读取写入模式
+a：附加模式
+"""
+#with open没有的文件，会自动创建一个新的文件
+#w：写入模式，将内容写入指定文件中，并覆盖文件原有内容
+with open("content.txt", "w") as f:
+    f.write("Python\n")
+    f.write("Java\n")
+#a：附加模式，会在保留文件原始数据条件下，写入新的内容
+with open("content.txt", "a") as f:
+    f.write("Python\n")
+    f.write("Java\n")
+    
+with open("content.txt", "r") as f:
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
