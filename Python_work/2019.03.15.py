@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+g# -*- coding: utf-8 -*-
 
 
 #函数小练习
