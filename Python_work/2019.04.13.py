@@ -150,7 +150,7 @@ print('Thank you everyone, that was a great magic show!')
 
 
 #Creat digital list
-    #function range()
+    #function range()  {It is a type of [ ) }
 for value in range(1,5):#1~4
     print(value)
 for value in range(1,5):
